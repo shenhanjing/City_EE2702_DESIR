@@ -19,7 +19,7 @@ The case study used for this assignment is operation of a very simple Internet r
 
 In this first assignment, you are asked to develop a discrete-event simulation of an Internet router with a single input queue and a single output interface. The packets arrive following a random Poisson process, with a pre-defined average time between two arriving packets. The Poisson process is characterized with an exponential distribution of inter-arrival times. The packets have random sizes – the packet size should be calculated by the simulator at the packet arrival. The packet size should be considered a random variable with exponential distribution. In the case the packet has arrived and cannot be immediately served, it has to wait for the first available opportunity to be served. The output interface – the server – should operate without any pauses, and should operate at a constant serving rate – this means that packet size determines the service time duration.
 
-Your code should request the average system parameters – average packet size and average interarrival time for the packets, and should calculate the following parameters: 
+Your code should request the average system parameters – average packet size and average inter-arrival time for the packets, and should calculate the following parameters: 
  - average waiting time
  - average queue size
  - probability that the queue size is 0 at arrival of a new call
